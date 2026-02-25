@@ -1,0 +1,44 @@
+/* ─── Reset & Base ─────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #F8F9FB;
+}
+
+/* ─── Scrollbars ────────────────────────────────────── */
+::-webkit-scrollbar          { width: 5px; height: 5px; }
+::-webkit-scrollbar-track    { background: transparent; }
+::-webkit-scrollbar-thumb    { background: #CBD5E0; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #A0ADB8; }
+
+/* ─── Placeholder ───────────────────────────────────── */
+input::placeholder  { color: #9099A8; }
+
+/* ─── Animations ────────────────────────────────────── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1);    }
+  50%       { opacity: .5; transform: scale(.85); }
+}
+
+@keyframes fadeUp {
+  from { transform: translateY(12px); opacity: 0; }
+  to   { transform: none;             opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(32px); opacity: 0; }
+  to   { transform: none;             opacity: 1; }
+}
+
+@keyframes slideInToast {
+  from { transform: translateX(24px); opacity: 0; }
+  to   { transform: none;             opacity: 1; }
+}
