@@ -1,3 +1,21 @@
-test
+# ── REQUIRED — fill these in ────────────────────────────────────
+AZURE_OPENAI_ENDPOINT=https://YOUR_RESOURCE.openai.azure.com/
+AZURE_OPENAI_KEY=your-api-key-here
+AZURE_OPENAI_API_VERSION=2024-02-01
+AZURE_OPENAI_DEPLOYMENT=gpt-4o
 
-pip install fastapi uvicorn openai pydantic-settings tenacity loguru python-dotenv
+# ── Optional — defaults are fine as-is ──────────────────────────
+LLM_TEMPERATURE=0.1
+LLM_MAX_RETRIES=3
+LLM_RETRY_WAIT_MIN=2
+LLM_RETRY_WAIT_MAX=10
+LLM_TIMEOUT=120
+
+AGENT_DEFAULT_MAX_TOKENS=4000
+AGENT_QUERY_MAX_TOKENS=8000
+
+APP_HOST=0.0.0.0
+APP_PORT=8000
+APP_LOG_LEVEL=info
+
+OUTPUT_DIR=./outputs
